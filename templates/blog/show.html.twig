@@ -2,15 +2,15 @@
 
 {% block body %}
 	<article>
-		<h2>Title Article 1</h2>
+		<h2>{{ article.title }}</h2>
 		<div class="metadata">
-			Write on 26/07/2019 at 10:05am Category Tuto
+			Write on 
+			{{ article.createAt | date('d/m/Y') }} at {{ article.createAt | date('H:i') }} 
+			Category Tuto
 		</div>
 		<div class="content">
 			<img src="http://placehold.it/350X150" alt="">
-			<p>I just Write my First Article</p>
-			<p>& it's on practise Symf</p>
-			<p>Make a Resume to read on page more ...</p>
+			<p>{{ article.content | raw }}</p>
 		</div>
 	</article>
 {% endblock body %}
