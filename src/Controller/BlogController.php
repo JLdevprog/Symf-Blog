@@ -4,7 +4,10 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Request;
+use Doctrine\Common\Persistence\ObjectManager;
 use App\Entity\Article;
+use App\Repository\ArticleRepository;
 
 class BlogController extends AbstractController
 {
@@ -27,6 +30,24 @@ class BlogController extends AbstractController
     */
     public function home(){
     	return $this->render('blog/home.html.twig');
+    }
+    /**
+    * @Route("/blog/new", name="blog_create")
+    */
+    public function create(Request $request, ObjectManager $manager){
+        dump($request);
+
+        if($request->request->count() > 0){
+            $article = new Article();
+            $article->setTitle($request->request->get('title'))
+                    ->setContent($request->request->get('content'))
+                    ->setImage($request->request->get('image'))
+                    ->setCreateAt(new \DateTime());
+
+            $manager->persist($article);
+            $manager->flush();
+        }
+        return $this->render('blog/create.html.twig');
     }
     /**
     * @Route("/blog/{id}",name="blog_show")
