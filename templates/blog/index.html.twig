@@ -6,38 +6,21 @@
 
 	<section class="articles">
 
-		<h2>Title Article 1</h2>
-		<div class="metadata">
-			Write on 26/07/2019 at 10:05am Category Tuto
-		</div>
-		<div class="content">
-			<img src="http://placehold.it/350X150" alt="">
-			<p>I just Write my First Article</p>
-			<p>& it's on practise Symf</p>
-			<a href="{{ path('blog_show') }}" class="btn btn-primary">Read more...</a>
-		</div>
+		{% for article in articles %}
 
-		<h2>Title Article 2</h2>
-		<div class="metadata">
-			Write on 26/07/2019 at 10:05am Category Tuto
-		</div>
-		<div class="content">
-			<img src="http://placehold.it/350X150" alt="">
-			<p>I just Write my First Article</p>
-			<p>& it's on practise Symf</p>
-			<a href="{{ path('blog_show') }}" class="btn btn-primary">Read more...</a>
-		</div>
+			<article>
+				<h2>{{ article.title }}</h2>
+				<div class="metadata">
+					Write on {{ article.createAt | date('d/m/Y') }} at {{ article.createAt | date('H:i') }} Category Tuto
+				</div>
+				<div class="content">
+					<img src="{{ article.image }}" alt="">
+					<p>{{ article.content | raw }}</p>
+					<a href="{{ path('blog_show', {'id': article.id }) }}" class="btn btn-primary">Read more...</a>
+				</div>
+			</article>
 
-		<h2>Title Article 3</h2>
-		<div class="metadata">
-			Write on 26/07/2019 at 10:05am Category Tuto
-		</div>
-		<div class="content">
-			<img src="http://placehold.it/350X150" alt="">
-			<p>I just Write my First Article</p>
-			<p>& it's on practise Symf</p>
-			<a href="{{ path('blog_show') }}" class="btn btn-primary">Read more...</a>
-		</div>
+		{% endfor %}
 
 	</section>
 
