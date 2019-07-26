@@ -1,20 +1,44 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello BlogController!{% endblock %}
+{% block title %}Hello {{ controller_name}}!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+	<section class="articles">
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/Users/Shugox/JLDPS/symf/src/Controller/BlogController.php'|file_link(0) }}">src/Controller/BlogController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/Users/Shugox/JLDPS/symf/templates/blog/index.html.twig'|file_link(0) }}">templates/blog/index.html.twig</a></code></li>
-    </ul>
-</div>
+		<h2>Title Article 1</h2>
+		<div class="metadata">
+			Write on 26/07/2019 at 10:05am Category Tuto
+		</div>
+		<div class="content">
+			<img src="http://placehold.it/350X150" alt="">
+			<p>I just Write my First Article</p>
+			<p>& it's on practise Symf</p>
+			<a href="{{ path('blog_show') }}" class="btn btn-primary">Read more...</a>
+		</div>
+
+		<h2>Title Article 2</h2>
+		<div class="metadata">
+			Write on 26/07/2019 at 10:05am Category Tuto
+		</div>
+		<div class="content">
+			<img src="http://placehold.it/350X150" alt="">
+			<p>I just Write my First Article</p>
+			<p>& it's on practise Symf</p>
+			<a href="{{ path('blog_show') }}" class="btn btn-primary">Read more...</a>
+		</div>
+
+		<h2>Title Article 3</h2>
+		<div class="metadata">
+			Write on 26/07/2019 at 10:05am Category Tuto
+		</div>
+		<div class="content">
+			<img src="http://placehold.it/350X150" alt="">
+			<p>I just Write my First Article</p>
+			<p>& it's on practise Symf</p>
+			<a href="{{ path('blog_show') }}" class="btn btn-primary">Read more...</a>
+		</div>
+
+	</section>
+
 {% endblock %}
