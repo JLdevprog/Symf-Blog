@@ -1,5 +1,5 @@
 # Symf-Blog
-<p>Project to practise the Framework</p>
+<h3>Project to practise the Framework</h3>
 <a href="https://symfony.com">
   <img src="https://symfony.com/images/logos/header-logo.svg" alt="Symfony Website" width="250">
 </a>
