@@ -1,10 +1,12 @@
 {% extends 'base.html.twig' %}
 
+{% form_theme formArticle 'bootstrap_4_layout.html.twig' %}
+
 {% block body %}
 
 	<h1>Create Article</h1>
 
-	<form action="" method="post">
+	{# <form action="" method="post">
 		<input type="text" name="title" placeholder="Article Title">
 		<br>
 		<textarea name="content" placeholder="Article Content"></textarea>
@@ -12,6 +14,32 @@
 		<input type="text" name="image" placeholder="Article Image">
 		<br>
 		<button type="submit">Register</button>
-	</form>
+	</form> #}
+
+	{# {{ form(formArticle) }} #}
+
+	{{ form_start(formArticle) }}
+
+		{# <div class="form-group">
+			<label for="">Title</label>
+			{{ form_widget(formArticle.title) }}
+		</div>
+		<div class="form-group">
+			<label for="">Content</label>
+			{{ form_widget(formArticle.content) }}
+		</div>
+		<div class="form-group">
+			<label for="">Image</label>
+			{{ form_widget(formArticle.image) }}
+		</div> #}
+			{# {{ form_widget(formArticle) }} #}
+
+		{{ form_row(formArticle.title) }}
+		{{ form_row(formArticle.content, {'attr': {'placeholder':"Article Content"}}) }}
+		{{ form_row(formArticle.image, {'attr': {'placeholder':"Article URL Image"}}) }}
+
+		<button type="submit" class="btn btn-success">Register</button>
+
+	{{ form_end(formArticle) }}
 
 {% endblock body %}
