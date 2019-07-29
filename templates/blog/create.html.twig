@@ -34,9 +34,9 @@
 		</div> #}
 			{# {{ form_widget(formArticle) }} #}
 
-		{{ form_row(formArticle.title) }}
-		{{ form_row(formArticle.content, {'attr': {'placeholder':"Article Content"}}) }}
-		{{ form_row(formArticle.image, {'attr': {'placeholder':"Article URL Image"}}) }}
+		{{ form_row(formArticle.title, {'attr': {'placeholder':"Title"}}) }}
+		{{ form_row(formArticle.content, {'attr': {'placeholder':"Content"}}) }}
+		{{ form_row(formArticle.image, {'attr': {'placeholder':"URL Image"}}) }}
 
 		<button type="submit" class="btn btn-success">
 			{% if editMode %}
