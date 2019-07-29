@@ -1,325 +1,3 @@
- ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git remote add origin https://github.com/JLdevprog/symf.git
-fatal: remote origin already exists.
- ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git push -u origin master
-error: src refspec master does not match any.
-error: failed to push some refs to 'https://github.com/JLdevprog/symf.git'
- ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git remote add origin https://github.com/JLdevprog/symf.git
-git push -u origin master
-fatal: remote origin already exists.
-error: src refspec master does not match any.
-error: failed to push some refs to 'https://github.com/JLdevprog/symf.git'
- ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  cd ..
- Shugox@Johanns-MacBook-Pro  ~/jldps   jls ●  git init
-Reinitialized existing Git repository in /Users/Shugox/JLDPS/.git/
- Shugox@Johanns-MacBook-Pro  ~/jldps   jls ●  cd symf
- Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git remote add origin https://github.com/JLdevprog/symf.git
-git push -u origin master
-fatal: remote origin already exists.
-error: src refspec master does not match any.
-error: failed to push some refs to 'https://github.com/JLdevprog/symf.git'
- ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git status
-On branch master
-
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	.env
-	.env.test
-	.gitignore
-	bin/
-	composer.json
-	composer.lock
-	composer.phar
-	config/
-	phpunit.xml.dist
-	public/
-	src/
-	symfony.lock
-	templates/
-	tests/
-	translations/
-
-nothing added to commit but untracked files present (use "git add" to track)
- Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git add .
- Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master ✚  git status
-On branch master
-
-No commits yet
-
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-
-	new file:   .env
-	new file:   .env.test
-	new file:   .gitignore
-	new file:   bin/console
-	new file:   bin/phpunit
-	new file:   composer.json
-	new file:   composer.lock
-	new file:   composer.phar
-	new file:   config/bootstrap.php
-	new file:   config/bundles.php
-	new file:   config/packages/cache.yaml
-	new file:   config/packages/dev/debug.yaml
-	new file:   config/packages/dev/easy_log_handler.yaml
-	new file:   config/packages/dev/monolog.yaml
-	new file:   config/packages/dev/routing.yaml
-	new file:   config/packages/dev/swiftmailer.yaml
-	new file:   config/packages/dev/web_profiler.yaml
-	new file:   config/packages/doctrine.yaml
-	new file:   config/packages/doctrine_migrations.yaml
-	new file:   config/packages/framework.yaml
-	new file:   config/packages/prod/doctrine.yaml
-	new file:   config/packages/prod/monolog.yaml
-	new file:   config/packages/routing.yaml
-	new file:   config/packages/security.yaml
-	new file:   config/packages/sensio_framework_extra.yaml
-	new file:   config/packages/swiftmailer.yaml
-	new file:   config/packages/test/framework.yaml
-	new file:   config/packages/test/monolog.yaml
-	new file:   config/packages/test/routing.yaml
-	new file:   config/packages/test/swiftmailer.yaml
-	new file:   config/packages/test/validator.yaml
-	new file:   config/packages/test/web_profiler.yaml
-	new file:   config/packages/translation.yaml
-	new file:   config/packages/twig.yaml
-	new file:   config/packages/validator.yaml
-	new file:   config/routes.yaml
-	new file:   config/routes/annotations.yaml
-	new file:   config/routes/dev/twig.yaml
-	new file:   config/routes/dev/web_profiler.yaml
-	new file:   config/services.yaml
-	new file:   phpunit.xml.dist
-	new file:   public/index.php
-	new file:   src/Controller/.gitignore
-	new file:   src/Entity/.gitignore
-	new file:   src/Kernel.php
-	new file:   src/Migrations/.gitignore
-	new file:   src/Repository/.gitignore
-	new file:   symfony.lock
-	new file:   templates/base.html.twig
-	new file:   tests/.gitignore
-	new file:   translations/.gitignore
-
- Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master ✚  git commit -m "First Commit"
-[master (root-commit) 37d34e8] First Commit
- 51 files changed, 7786 insertions(+)
- create mode 100644 .env
- create mode 100644 .env.test
- create mode 100644 .gitignore
- create mode 100755 bin/console
- create mode 100755 bin/phpunit
- create mode 100644 composer.json
- create mode 100644 composer.lock
- create mode 100755 composer.phar
- create mode 100644 config/bootstrap.php
- create mode 100644 config/bundles.php
- create mode 100644 config/packages/cache.yaml
- create mode 100644 config/packages/dev/debug.yaml
- create mode 100644 config/packages/dev/easy_log_handler.yaml
- create mode 100644 config/packages/dev/monolog.yaml
- create mode 100644 config/packages/dev/routing.yaml
- create mode 100644 config/packages/dev/swiftmailer.yaml
- create mode 100644 config/packages/dev/web_profiler.yaml
- create mode 100644 config/packages/doctrine.yaml
- create mode 100644 config/packages/doctrine_migrations.yaml
- create mode 100644 config/packages/framework.yaml
- create mode 100644 config/packages/prod/doctrine.yaml
- create mode 100644 config/packages/prod/monolog.yaml
- create mode 100644 config/packages/routing.yaml
- create mode 100644 config/packages/security.yaml
- create mode 100644 config/packages/sensio_framework_extra.yaml
- create mode 100644 config/packages/swiftmailer.yaml
- create mode 100644 config/packages/test/framework.yaml
- create mode 100644 config/packages/test/monolog.yaml
- create mode 100644 config/packages/test/routing.yaml
- create mode 100644 config/packages/test/swiftmailer.yaml
- create mode 100644 config/packages/test/validator.yaml
- create mode 100644 config/packages/test/web_profiler.yaml
- create mode 100644 config/packages/translation.yaml
- create mode 100644 config/packages/twig.yaml
- create mode 100644 config/packages/validator.yaml
- create mode 100644 config/routes.yaml
- create mode 100644 config/routes/annotations.yaml
- create mode 100644 config/routes/dev/twig.yaml
- create mode 100644 config/routes/dev/web_profiler.yaml
- create mode 100644 config/services.yaml
- create mode 100644 phpunit.xml.dist
- create mode 100644 public/index.php
- create mode 100644 src/Controller/.gitignore
- create mode 100644 src/Entity/.gitignore
- create mode 100644 src/Kernel.php
- create mode 100644 src/Migrations/.gitignore
- create mode 100644 src/Repository/.gitignore
- create mode 100644 symfony.lock
- create mode 100644 templates/base.html.twig
- create mode 100644 tests/.gitignore
- create mode 100644 translations/.gitignore
- Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git remote add origin https://github.com/JLdevprog/symf.git
-git push -u origin master
-fatal: remote origin already exists.
-Enumerating objects: 59, done.
-Counting objects: 100% (59/59), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (54/54), done.
-Writing objects: 100% (59/59), 513.10 KiB | 5.40 MiB/s, done.
-Total 59 (delta 1), reused 0 (delta 0)
-remote: Resolving deltas: 100% (1/1), done.
-To https://github.com/JLdevprog/symf.git
- * [new branch]      master -> master
-Branch 'master' set up to track remote branch 'master' from 'origin'.
- Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git branch -b jls
-error: unknown switch `b'
-usage: git branch [<options>] [-r | -a] [--merged | --no-merged]
-   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
-   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
-   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
-   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
-   or: git branch [<options>] [-r | -a] [--points-at]
-   or: git branch [<options>] [-r | -a] [--format]
-
-Generic options
-    -v, --verbose         show hash and subject, give twice for upstream branch
-    -q, --quiet           suppress informational messages
-    -t, --track           set up tracking mode (see git-pull(1))
-    -u, --set-upstream-to <upstream>
-                          change the upstream info
-    --unset-upstream      Unset the upstream info
-    --color[=<when>]      use colored output
-    -r, --remotes         act on remote-tracking branches
-    --contains <commit>   print only branches that contain the commit
-    --no-contains <commit>
-                          print only branches that don't contain the commit
-    --abbrev[=<n>]        use <n> digits to display SHA-1s
-
-Specific git-branch actions:
-    -a, --all             list both remote-tracking and local branches
-    -d, --delete          delete fully merged branch
-    -D                    delete branch (even if not merged)
-    -m, --move            move/rename a branch and its reflog
-    -M                    move/rename a branch, even if target exists
-    -c, --copy            copy a branch and its reflog
-    -C                    copy a branch, even if target exists
-    -l, --list            list branch names
-    --create-reflog       create the branch's reflog
-    --edit-description    edit the description for the branch
-    -f, --force           force creation, move/rename, deletion
-    --merged <commit>     print only branches that are merged
-    --no-merged <commit>  print only branches that are not merged
-    --column[=<style>]    list branches in columns
-    --sort <key>          field name to sort on
-    --points-at <object>  print only branches of the object
-    -i, --ignore-case     sorting and filtering are case insensitive
-    --format <format>     format to use for the output
-
- ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git branch -c jls
- Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git branch
- Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git checkout jls
-Switched to branch 'jls'
-Your branch is up to date with 'origin/master'.
- Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  php bin/console make:controller
-
- Choose a name for your controller class (e.g. AgreeableElephantController):
- > BlogController
-
- created: src/Controller/BlogController.php
- created: templates/blog/index.html.twig
-
-
-  Success!
-
-
- Next: Open your new controller class and add some pages!
- Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
-On branch jls
-Your branch is up to date with 'origin/master'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-	modified:   templates/base.html.twig
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	src/Controller/BlogController.php
-	templates/blog/
-
-no changes added to commit (use "git add" and/or "git commit -a")
- Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
- Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
-On branch jls
-Your branch is up to date with 'origin/master'.
-
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
-
-	new file:   src/Controller/BlogController.php
-	modified:   templates/base.html.twig
-	new file:   templates/blog/home.html.twig
-	new file:   templates/blog/index.html.twig
-
- Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part 1"
-[jls 5ef5a0a] Part 1
- 4 files changed, 89 insertions(+), 2 deletions(-)
- create mode 100644 src/Controller/BlogController.php
- create mode 100644 templates/blog/home.html.twig
- create mode 100644 templates/blog/index.html.twig
- Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
-Enumerating objects: 15, done.
-Counting objects: 100% (15/15), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (10/10), done.
-Writing objects: 100% (10/10), 2.04 KiB | 2.04 MiB/s, done.
-Total 10 (delta 2), reused 0 (delta 0)
-remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
-remote:
-remote: Create a pull request for 'jls' on GitHub by visiting:
-remote:      https://github.com/JLdevprog/symf/pull/new/jls
-remote:
-To https://github.com/JLdevprog/symf.git
- * [new branch]      jls -> jls
- Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
-On branch jls
-Your branch is ahead of 'origin/master' by 1 commit.
-  (use "git push" to publish your local commits)
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-	modified:   src/Controller/BlogController.php
-	modified:   templates/blog/index.html.twig
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	templates/blog/show.html.twig
-
-no changes added to commit (use "git add" and/or "git commit -a")
- Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
- Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
-On branch jls
-Your branch is ahead of 'origin/master' by 1 commit.
-  (use "git push" to publish your local commits)
-
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
-
-	modified:   src/Controller/BlogController.php
-	modified:   templates/blog/index.html.twig
-	new file:   templates/blog/show.html.twig
-
- Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part 1 Updt"
-[jls 7bd7860] Part 1 Updt
- 3 files changed, 66 insertions(+), 20 deletions(-)
- rewrite templates/blog/index.html.twig (91%)
- create mode 100644 templates/blog/show.html.twig
- Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
-Enumerating objects: 16, done.
 Counting objects: 100% (16/16), done.
 Delta compression using up to 4 threads
 Compressing objects: 100% (9/9), done.
@@ -922,4 +600,224 @@ On branch jls
 Your branch is up to date with 'origin/master'.
 
 nothing to commit, working tree clean
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	terminalHistory.txt
+	terminalServer.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git add .
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+On branch jls
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   terminalHistory.txt
+	new file:   terminalServer.txt
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Updt Terminal History"
+[jls 826447f] Updt Terminal History
+ 2 files changed, 1274 insertions(+)
+ create mode 100644 terminalHistory.txt
+ create mode 100644 terminalServer.txt
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 10.25 KiB | 10.25 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/JLdevprog/Symf-Blog.git
+To https://github.com/JLdevprog/symf.git
+   7875692..826447f  jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   config/packages/twig.yaml
+	modified:   src/Controller/BlogController.php
+	modified:   templates/blog/create.html.twig
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   config/packages/twig.yaml
+	modified:   src/Controller/BlogController.php
+	modified:   templates/blog/create.html.twig
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part2 Updt"
+[jls 2528cc5] Part2 Updt
+ 3 files changed, 75 insertions(+), 10 deletions(-)
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 1.75 KiB | 1.75 MiB/s, done.
+Total 11 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas: 100% (7/7), completed with 7 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/JLdevprog/Symf-Blog.git
+gitTo https://github.com/JLdevprog/symf.git
+   826447f..2528cc5  jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  php bin/console make:form
+
+ The name of the form class (e.g. OrangePizzaType):
+ > ArticleType
+
+ The name of Entity or fully qualified model class name that the new form will be bound to (empty for none):
+ > Article
+
+ created: src/Form/ArticleType.php
+
+
+  Success!
+
+
+ Next: Add fields to your form and start using it.
+ Find the documentation at https://symfony.com/doc/current/forms.html
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   src/Controller/BlogController.php
+	modified:   templates/blog/create.html.twig
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	src/Form/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   src/Controller/BlogController.php
+	new file:   src/Form/ArticleType.php
+	modified:   templates/blog/create.html.twig
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part2 Updt"
+[jls 4537010] Part2 Updt
+ 3 files changed, 65 insertions(+), 20 deletions(-)
+ create mode 100644 src/Form/ArticleType.php
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (10/10), 1.36 KiB | 695.00 KiB/s, done.
+Total 10 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/JLdevprog/Symf-Blog.git
+To https://github.com/JLdevprog/symf.git
+   2528cc5..4537010  jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git pull origin master
+remote: Enumerating objects: 23, done.
+remote: Counting objects: 100% (20/20), done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 15 (delta 8), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (15/15), done.
+From https://github.com/JLdevprog/symf
+ * branch            master     -> FETCH_HEAD
+   4730498..0e79a11  master     -> origin/master
+Updating 4537010..0e79a11
+Fast-forward
+ README.md | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+
+On branch jls
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   src/Entity/Article.php
+	modified:   templates/blog/create.html.twig
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+On branch jls
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   src/Entity/Article.php
+	modified:   templates/blog/create.html.twig
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part2 Updt"
+[jls edbd8cd] Part2 Updt
+ 2 files changed, 7 insertions(+), 3 deletions(-)
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 868 bytes | 868.00 KiB/s, done.
+Total 8 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/JLdevprog/Symf-Blog.git
+To https://github.com/JLdevprog/symf.git
+   4537010..edbd8cd  jls -> jls
  Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls 
