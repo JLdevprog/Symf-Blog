@@ -1,0 +1,925 @@
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git remote add origin https://github.com/JLdevprog/symf.git
+fatal: remote origin already exists.
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/JLdevprog/symf.git'
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git remote add origin https://github.com/JLdevprog/symf.git
+git push -u origin master
+fatal: remote origin already exists.
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/JLdevprog/symf.git'
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  cd ..
+ Shugox@Johanns-MacBook-Pro  ~/jldps   jls ●  git init
+Reinitialized existing Git repository in /Users/Shugox/JLDPS/.git/
+ Shugox@Johanns-MacBook-Pro  ~/jldps   jls ●  cd symf
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git remote add origin https://github.com/JLdevprog/symf.git
+git push -u origin master
+fatal: remote origin already exists.
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/JLdevprog/symf.git'
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.env
+	.env.test
+	.gitignore
+	bin/
+	composer.json
+	composer.lock
+	composer.phar
+	config/
+	phpunit.xml.dist
+	public/
+	src/
+	symfony.lock
+	templates/
+	tests/
+	translations/
+
+nothing added to commit but untracked files present (use "git add" to track)
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git add .
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master ✚  git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   .env
+	new file:   .env.test
+	new file:   .gitignore
+	new file:   bin/console
+	new file:   bin/phpunit
+	new file:   composer.json
+	new file:   composer.lock
+	new file:   composer.phar
+	new file:   config/bootstrap.php
+	new file:   config/bundles.php
+	new file:   config/packages/cache.yaml
+	new file:   config/packages/dev/debug.yaml
+	new file:   config/packages/dev/easy_log_handler.yaml
+	new file:   config/packages/dev/monolog.yaml
+	new file:   config/packages/dev/routing.yaml
+	new file:   config/packages/dev/swiftmailer.yaml
+	new file:   config/packages/dev/web_profiler.yaml
+	new file:   config/packages/doctrine.yaml
+	new file:   config/packages/doctrine_migrations.yaml
+	new file:   config/packages/framework.yaml
+	new file:   config/packages/prod/doctrine.yaml
+	new file:   config/packages/prod/monolog.yaml
+	new file:   config/packages/routing.yaml
+	new file:   config/packages/security.yaml
+	new file:   config/packages/sensio_framework_extra.yaml
+	new file:   config/packages/swiftmailer.yaml
+	new file:   config/packages/test/framework.yaml
+	new file:   config/packages/test/monolog.yaml
+	new file:   config/packages/test/routing.yaml
+	new file:   config/packages/test/swiftmailer.yaml
+	new file:   config/packages/test/validator.yaml
+	new file:   config/packages/test/web_profiler.yaml
+	new file:   config/packages/translation.yaml
+	new file:   config/packages/twig.yaml
+	new file:   config/packages/validator.yaml
+	new file:   config/routes.yaml
+	new file:   config/routes/annotations.yaml
+	new file:   config/routes/dev/twig.yaml
+	new file:   config/routes/dev/web_profiler.yaml
+	new file:   config/services.yaml
+	new file:   phpunit.xml.dist
+	new file:   public/index.php
+	new file:   src/Controller/.gitignore
+	new file:   src/Entity/.gitignore
+	new file:   src/Kernel.php
+	new file:   src/Migrations/.gitignore
+	new file:   src/Repository/.gitignore
+	new file:   symfony.lock
+	new file:   templates/base.html.twig
+	new file:   tests/.gitignore
+	new file:   translations/.gitignore
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master ✚  git commit -m "First Commit"
+[master (root-commit) 37d34e8] First Commit
+ 51 files changed, 7786 insertions(+)
+ create mode 100644 .env
+ create mode 100644 .env.test
+ create mode 100644 .gitignore
+ create mode 100755 bin/console
+ create mode 100755 bin/phpunit
+ create mode 100644 composer.json
+ create mode 100644 composer.lock
+ create mode 100755 composer.phar
+ create mode 100644 config/bootstrap.php
+ create mode 100644 config/bundles.php
+ create mode 100644 config/packages/cache.yaml
+ create mode 100644 config/packages/dev/debug.yaml
+ create mode 100644 config/packages/dev/easy_log_handler.yaml
+ create mode 100644 config/packages/dev/monolog.yaml
+ create mode 100644 config/packages/dev/routing.yaml
+ create mode 100644 config/packages/dev/swiftmailer.yaml
+ create mode 100644 config/packages/dev/web_profiler.yaml
+ create mode 100644 config/packages/doctrine.yaml
+ create mode 100644 config/packages/doctrine_migrations.yaml
+ create mode 100644 config/packages/framework.yaml
+ create mode 100644 config/packages/prod/doctrine.yaml
+ create mode 100644 config/packages/prod/monolog.yaml
+ create mode 100644 config/packages/routing.yaml
+ create mode 100644 config/packages/security.yaml
+ create mode 100644 config/packages/sensio_framework_extra.yaml
+ create mode 100644 config/packages/swiftmailer.yaml
+ create mode 100644 config/packages/test/framework.yaml
+ create mode 100644 config/packages/test/monolog.yaml
+ create mode 100644 config/packages/test/routing.yaml
+ create mode 100644 config/packages/test/swiftmailer.yaml
+ create mode 100644 config/packages/test/validator.yaml
+ create mode 100644 config/packages/test/web_profiler.yaml
+ create mode 100644 config/packages/translation.yaml
+ create mode 100644 config/packages/twig.yaml
+ create mode 100644 config/packages/validator.yaml
+ create mode 100644 config/routes.yaml
+ create mode 100644 config/routes/annotations.yaml
+ create mode 100644 config/routes/dev/twig.yaml
+ create mode 100644 config/routes/dev/web_profiler.yaml
+ create mode 100644 config/services.yaml
+ create mode 100644 phpunit.xml.dist
+ create mode 100644 public/index.php
+ create mode 100644 src/Controller/.gitignore
+ create mode 100644 src/Entity/.gitignore
+ create mode 100644 src/Kernel.php
+ create mode 100644 src/Migrations/.gitignore
+ create mode 100644 src/Repository/.gitignore
+ create mode 100644 symfony.lock
+ create mode 100644 templates/base.html.twig
+ create mode 100644 tests/.gitignore
+ create mode 100644 translations/.gitignore
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git remote add origin https://github.com/JLdevprog/symf.git
+git push -u origin master
+fatal: remote origin already exists.
+Enumerating objects: 59, done.
+Counting objects: 100% (59/59), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (54/54), done.
+Writing objects: 100% (59/59), 513.10 KiB | 5.40 MiB/s, done.
+Total 59 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/JLdevprog/symf.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git branch -b jls
+error: unknown switch `b'
+usage: git branch [<options>] [-r | -a] [--merged | --no-merged]
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track           set up tracking mode (see git-pull(1))
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      Unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --list            list branch names
+    --create-reflog       create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --format <format>     format to use for the output
+
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git branch -c jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git branch
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   master  git checkout jls
+Switched to branch 'jls'
+Your branch is up to date with 'origin/master'.
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  php bin/console make:controller
+
+ Choose a name for your controller class (e.g. AgreeableElephantController):
+ > BlogController
+
+ created: src/Controller/BlogController.php
+ created: templates/blog/index.html.twig
+
+
+  Success!
+
+
+ Next: Open your new controller class and add some pages!
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   templates/base.html.twig
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	src/Controller/BlogController.php
+	templates/blog/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+On branch jls
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   src/Controller/BlogController.php
+	modified:   templates/base.html.twig
+	new file:   templates/blog/home.html.twig
+	new file:   templates/blog/index.html.twig
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part 1"
+[jls 5ef5a0a] Part 1
+ 4 files changed, 89 insertions(+), 2 deletions(-)
+ create mode 100644 src/Controller/BlogController.php
+ create mode 100644 templates/blog/home.html.twig
+ create mode 100644 templates/blog/index.html.twig
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 2.04 KiB | 2.04 MiB/s, done.
+Total 10 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'jls' on GitHub by visiting:
+remote:      https://github.com/JLdevprog/symf/pull/new/jls
+remote:
+To https://github.com/JLdevprog/symf.git
+ * [new branch]      jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   src/Controller/BlogController.php
+	modified:   templates/blog/index.html.twig
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	templates/blog/show.html.twig
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   src/Controller/BlogController.php
+	modified:   templates/blog/index.html.twig
+	new file:   templates/blog/show.html.twig
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part 1 Updt"
+[jls 7bd7860] Part 1 Updt
+ 3 files changed, 66 insertions(+), 20 deletions(-)
+ rewrite templates/blog/index.html.twig (91%)
+ create mode 100644 templates/blog/show.html.twig
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 1.35 KiB | 1.35 MiB/s, done.
+Total 9 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/JLdevprog/symf.git
+   5ef5a0a..7bd7860  jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  php bin/console doctrine:database:create
+
+In AbstractMySQLDriver.php line 93:
+
+  An exception occurred in driver: SQLSTATE[HY000] [2002] Connection refused
+
+
+In PDOConnection.php line 31:
+
+  SQLSTATE[HY000] [2002] Connection refused
+
+
+In PDOConnection.php line 27:
+
+  SQLSTATE[HY000] [2002] Connection refused
+
+
+doctrine:database:create [--shard SHARD] [--connection [CONNECTION]] [--if-not-exists] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>
+
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  php bin/console doctrine:database:create
+
+In AbstractMySQLDriver.php line 93:
+
+  An exception occurred in driver: SQLSTATE[HY000] [2002] Connection refused
+
+
+In PDOConnection.php line 31:
+
+  SQLSTATE[HY000] [2002] Connection refused
+
+
+In PDOConnection.php line 27:
+
+  SQLSTATE[HY000] [2002] Connection refused
+
+
+doctrine:database:create [--shard SHARD] [--connection [CONNECTION]] [--if-not-exists] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>
+
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  sudo php bin/console doctrine:database:create
+Password:
+
+In AbstractMySQLDriver.php line 93:
+
+  An exception occurred in driver: SQLSTATE[HY000] [2002] Connection refused
+
+
+In PDOConnection.php line 31:
+
+  SQLSTATE[HY000] [2002] Connection refused
+
+
+In PDOConnection.php line 27:
+
+  SQLSTATE[HY000] [2002] Connection refused
+
+
+doctrine:database:create [--shard SHARD] [--connection [CONNECTION]] [--if-not-exists] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>
+
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  sudo php bin/console doctrine:database:create
+
+In AbstractMySQLDriver.php line 93:
+
+  An exception occurred in driver: SQLSTATE[HY000] [2002] Connection refused
+
+
+In PDOConnection.php line 31:
+
+  SQLSTATE[HY000] [2002] Connection refused
+
+
+In PDOConnection.php line 27:
+
+  SQLSTATE[HY000] [2002] Connection refused
+
+
+doctrine:database:create [--shard SHARD] [--connection [CONNECTION]] [--if-not-exists] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>
+
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  sudo php bin/console doctrine:database:create
+Created database `db_name` for connection named default
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console doctrine:database:create
+Created database `blog` for connection named default
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console make:entity
+
+ Class name of the entity to create or update (e.g. TinyElephant):
+ > Article
+
+ created: src/Entity/Article.php
+ created: src/Repository/ArticleRepository.php
+
+ Entity generated! Now let's add some fields!
+ You can always add more fields later manually or by re-running this command.
+
+ New property name (press <return> to stop adding fields):
+ > title
+
+ Field type (enter ? to see all types) [string]:
+ > ?
+
+Main types
+  * string
+  * text
+  * boolean
+  * integer (or smallint, bigint)
+  * float
+
+Relationships / Associations
+  * relation (a wizard 🧙 will help you build the relation)
+  * ManyToOne
+  * OneToMany
+  * ManyToMany
+  * OneToOne
+
+Array/Object Types
+  * array (or simple_array)
+  * json
+  * object
+  * binary
+  * blob
+
+Date/Time Types
+  * datetime (or datetime_immutable)
+  * datetimetz (or datetimetz_immutable)
+  * date (or date_immutable)
+  * time (or time_immutable)
+  * dateinterval
+
+Other Types
+  * json_array
+  * decimal
+  * guid
+
+
+ Field type (enter ? to see all types) [string]:
+ > string
+
+ Field length [255]:
+ >
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ > no
+
+ updated: src/Entity/Article.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > content
+
+ Field type (enter ? to see all types) [string]:
+ > text
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Article.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > image
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ >
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Article.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > createAt
+
+ Field type (enter ? to see all types) [datetime]:
+ >
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Article.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ >
+
+
+
+  Success!
+
+
+ Next: When you're ready, create a migration with make:migration
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console make:migration
+
+
+  Success!
+
+
+ Next: Review the new migration "src/Migrations/Version20190726092712.php"
+ Then: Run the migration with php bin/console doctrine:migrations:migrate
+ See https://symfony.com/doc/current/bundles/DoctrineMigrationsBundle/index.html
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console doctrine:migration:migrate
+
+                    Application Migrations
+
+
+WARNING! You are about to execute a database migration that could result in schema changes and data loss. Are you sure you wish to continue? (y/n)y
+Migrating up to 20190726092712 from 0
+
+  ++ migrating 20190726092712
+
+     -> CREATE TABLE article (id INT AUTO_INCREMENT NOT NULL, title VARCHAR(255) NOT NULL, content LONGTEXT NOT NULL, image VARCHAR(255) NOT NULL, create_at DATETIME NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ENGINE = InnoDB
+
+  ++ migrated (took 242.9ms, used 16M memory)
+
+  ------------------------
+
+  ++ finished in 257.7ms
+  ++ used 16M memory
+  ++ 1 migrations executed
+  ++ 1 sql queries
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php composer.phar require orm-fixture --dev
+
+
+  [UnexpectedValueException]
+  "orm-fixture" is not a valid alias. Did you mean this:
+    "doctrine/doctrine-fixtures-bundle", supported aliases: "orm-fixtures", "
+  ormfixtures"
+
+
+require [--dev] [--prefer-source] [--prefer-dist] [--no-progress] [--no-suggest] [--no-update] [--no-scripts] [--update-no-dev] [--update-with-dependencies] [--update-with-all-dependencies] [--ignore-platform-reqs] [--prefer-stable] [--prefer-lowest] [--sort-packages] [-o|--optimize-autoloader] [-a|--classmap-authoritative] [--apcu-autoloader] [--unpack] [--] [<packages>]...
+
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  composer require orm-fixtures --dev
+zsh: command not found: composer
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php composer.phar require orm-fixtures --dev
+Using version ^3.2 for doctrine/doctrine-fixtures-bundle
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.3.*"
+
+Prefetching 2 packages 🎵 💨
+  - Downloading (100%)
+
+Package operations: 2 installs, 0 updates, 0 removals
+  - Installing doctrine/data-fixtures (v1.3.2): Loading from cache
+  - Installing doctrine/doctrine-fixtures-bundle (3.2.2): Loading from cache
+Writing lock file
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Symfony operations: 1 recipe (55daa55c0d8eeaec0c3654280de646b6)
+  - Configuring doctrine/doctrine-fixtures-bundle (>=3.0): From github.com/symfony/recipes:master
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+
+Some files may have been created or updated to configure your new packages.
+Please review, edit and commit them: these files are yours.
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console make:fixtures
+
+ The class name of the fixtures to create (e.g. AppFixtures):
+ > ArticleFixtures
+
+ created: src/DataFixtures/ArticleFixtures.php
+
+
+  Success!
+
+
+ Next: Open your new fixtures class and start customizing it.
+ Load your fixtures by running: php bin/console doctrine:fixtures:load
+ Docs: https://symfony.com/doc/master/bundles/DoctrineFixturesBundle/index.html
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console doctrine:fixtures:load
+
+Fatal error: Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: syntax error, unexpected '}' in /Users/Shugox/JLDPS/symf/src/DataFixtures/ArticleFixtures.php:23
+Stack trace:
+#0 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('App\\DataFixture...')
+#1 [internal function]: spl_autoload_call('App\\DataFixture...')
+#2 /Users/Shugox/JLDPS/symf/vendor/symfony/config/Resource/ClassExistenceResource.php(78): class_exists('App\\DataFixture...')
+#3 /Users/Shugox/JLDPS/symf/vendor/symfony/dependency-injection/ContainerBuilder.php(353): Symfony\Component\Config\Resource\ClassExistenceResource->isFresh(0)
+#4 /Users/Shugox/JLDPS/symf/vendor/symfony/dependency-injection/Loader/FileLoader.php(151): Symfony\Component\DependencyInjection\ContainerBuilder->getReflectionClass('App\\DataFixture...')
+#5 /Users/Shugox/JLDPS/symf/vendor/symfony/dependency-injection/Loader/FileLoader.php(57): Symfony\Component\DependencyInjection\Loader\FileLoader->findClasses('App\\', '../src/*', Array)
+#6 /Users/Shugox/JLDP in /Users/Shugox/JLDPS/symf/src/DataFixtures/ArticleFixtures.php on line 23
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console doctrine:fixtures:load
+
+ Careful, database "blog" will be purged. Do you want to continue? (yes/no) [no]:
+ > y
+
+   > purging database
+   > loading App\DataFixtures\AppFixtures
+   > loading App\DataFixtures\ArticleFixtures
+
+Fatal error: Interface 'Symfony\Bundle\FrameworkBundle\Tests\Fixtures\Validation\NotExistingInterface' not found in /Users/Shugox/JLDPS/symf/vendor/symfony/framework-bundle/Tests/Fixtures/Validation/Article.php on line 5
+
+In Article.php line 5:
+
+  Attempted to load interface "NotExistingInterface" from namespace "Symfony\
+  Bundle\FrameworkBundle\Tests\Fixtures\Validation".
+  Did you forget a "use" statement for another namespace?
+
+
+doctrine:fixtures:load [--append] [--group GROUP] [--em EM] [--shard SHARD] [--purge-with-truncate] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>
+
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console doctrine:fixtures:load
+
+ Careful, database "blog" will be purged. Do you want to continue? (yes/no) [no]:
+ > y
+
+   > purging database
+   > loading App\DataFixtures\AppFixtures
+   > loading App\DataFixtures\ArticleFixtures
+
+Fatal error: Interface 'Symfony\Bundle\FrameworkBundle\Tests\Fixtures\Validation\NotExistingInterface' not found in /Users/Shugox/JLDPS/symf/vendor/symfony/framework-bundle/Tests/Fixtures/Validation/Article.php on line 5
+
+In Article.php line 5:
+
+  Attempted to load interface "NotExistingInterface" from namespace "Symfony\
+  Bundle\FrameworkBundle\Tests\Fixtures\Validation".
+  Did you forget a "use" statement for another namespace?
+
+
+doctrine:fixtures:load [--append] [--group GROUP] [--em EM] [--shard SHARD] [--purge-with-truncate] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>
+
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console doctrine:fixtures:load
+
+Fatal error: Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: syntax error, unexpected ')' in /Users/Shugox/JLDPS/symf/src/DataFixtures/ArticleFixtures.php:18
+Stack trace:
+#0 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('App\\DataFixture...')
+#1 [internal function]: spl_autoload_call('App\\DataFixture...')
+#2 /Users/Shugox/JLDPS/symf/vendor/symfony/config/Resource/ReflectionClassResource.php(105): ReflectionClass->__construct('App\\DataFixture...')
+#3 /Users/Shugox/JLDPS/symf/vendor/symfony/config/Resource/ReflectionClassResource.php(52): Symfony\Component\Config\Resource\ReflectionClassResource->computeHash()
+#4 /Users/Shugox/JLDPS/symf/vendor/symfony/config/Resource/SelfCheckingResourceChecker.php(34): Symfony\Component\Config\Resource\ReflectionClassResource->isFresh(1564134204)
+#5 /Users/Shugox/JLDPS/symf/vendor/symfony/config/ResourceCheckerConfigCache.php(99): Symfony\Component\Config\Resource\SelfCheckingResourceChecker->isFresh(Object(Symfony\Component\Config\Resource\Ref in /Users/Shugox/JLDPS/symf/src/DataFixtures/ArticleFixtures.php on line 18
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console doctrine:fixtures:load
+
+Fatal error: Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: syntax error, unexpected ')' in /Users/Shugox/JLDPS/symf/src/DataFixtures/ArticleFixtures.php:18
+Stack trace:
+#0 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('App\\DataFixture...')
+#1 [internal function]: spl_autoload_call('App\\DataFixture...')
+#2 /Users/Shugox/JLDPS/symf/vendor/symfony/config/Resource/ReflectionClassResource.php(105): ReflectionClass->__construct('App\\DataFixture...')
+#3 /Users/Shugox/JLDPS/symf/vendor/symfony/config/Resource/ReflectionClassResource.php(52): Symfony\Component\Config\Resource\ReflectionClassResource->computeHash()
+#4 /Users/Shugox/JLDPS/symf/vendor/symfony/config/Resource/SelfCheckingResourceChecker.php(34): Symfony\Component\Config\Resource\ReflectionClassResource->isFresh(1564134204)
+#5 /Users/Shugox/JLDPS/symf/vendor/symfony/config/ResourceCheckerConfigCache.php(99): Symfony\Component\Config\Resource\SelfCheckingResourceChecker->isFresh(Object(Symfony\Component\Config\Resource\Ref in /Users/Shugox/JLDPS/symf/src/DataFixtures/ArticleFixtures.php on line 18
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console doctrine:fixtures:load
+
+ Careful, database "blog" will be purged. Do you want to continue? (yes/no) [no]:
+ > y
+
+   > purging database
+   > loading App\DataFixtures\AppFixtures
+   > loading App\DataFixtures\ArticleFixtures
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   .env
+	modified:   composer.json
+	modified:   composer.lock
+	modified:   config/bundles.php
+	modified:   symfony.lock
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	src/DataFixtures/
+	src/Entity/Article.php
+	src/Migrations/Version20190726092712.php
+	src/Repository/ArticleRepository.php
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   .env
+	modified:   composer.json
+	modified:   composer.lock
+	modified:   config/bundles.php
+	new file:   src/DataFixtures/AppFixtures.php
+	new file:   src/DataFixtures/ArticleFixtures.php
+	new file:   src/Entity/Article.php
+	new file:   src/Migrations/Version20190726092712.php
+	new file:   src/Repository/ArticleRepository.php
+	modified:   symfony.lock
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part 1 Updt"
+[jls d44ab20] Part 1 Updt
+ 10 files changed, 364 insertions(+), 2 deletions(-)
+ create mode 100644 src/DataFixtures/AppFixtures.php
+ create mode 100644 src/DataFixtures/ArticleFixtures.php
+ create mode 100644 src/Entity/Article.php
+ create mode 100644 src/Migrations/Version20190726092712.php
+ create mode 100644 src/Repository/ArticleRepository.php
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 29, done.
+Counting objects: 100% (27/27), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (18/18), 4.16 KiB | 853.00 KiB/s, done.
+Total 18 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas: 100% (7/7), completed with 7 local objects.
+To https://github.com/JLdevprog/symf.git
+   7bd7860..d44ab20  jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  php bin/console doctrine:fixtures:load
+
+ Careful, database "blog" will be purged. Do you want to continue? (yes/no) [no]:
+ > y
+
+   > purging database
+   > loading App\DataFixtures\AppFixtures
+   > loading App\DataFixtures\ArticleFixtures
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console doctrine:fixtures:load
+
+ Careful, database "blog" will be purged. Do you want to continue? (yes/no) [no]:
+ > y
+
+   > purging database
+   > loading App\DataFixtures\AppFixtures
+   > loading App\DataFixtures\ArticleFixtures
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   .env
+	modified:   src/Controller/BlogController.php
+	modified:   templates/blog/index.html.twig
+	modified:   templates/blog/show.html.twig
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   .env
+	modified:   src/Controller/BlogController.php
+	modified:   templates/blog/index.html.twig
+	modified:   templates/blog/show.html.twig
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part 1 Updt"
+[jls f91059e] Part 1 Updt
+ 4 files changed, 48 insertions(+), 53 deletions(-)
+ rewrite templates/blog/index.html.twig (85%)
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 1.41 KiB | 720.00 KiB/s, done.
+Total 10 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To https://github.com/JLdevprog/symf.git
+   d44ab20..f91059e  jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git pull origin master
+remote: Enumerating objects: 28, done.
+remote: Counting objects: 100% (28/28), done.
+remote: Compressing objects: 100% (23/23), done.
+remote: Total 23 (delta 11), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (23/23), done.
+From https://github.com/JLdevprog/symf
+ * branch            master     -> FETCH_HEAD
+   37d34e8..ddfcefc  master     -> origin/master
+Updating f91059e..ddfcefc
+Fast-forward
+ README.md | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+ create mode 100644 README.md
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git pull origin master
+From https://github.com/JLdevprog/symf
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   src/Controller/BlogController.php
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+On branch jls
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   src/Controller/BlogController.php
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part 1 Updt"
+[jls 6aa97db] Part 1 Updt
+ 1 file changed, 1 insertion(+)
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 453 bytes | 453.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/JLdevprog/Symf-Blog.git
+To https://github.com/JLdevprog/symf.git
+   f91059e..6aa97db  jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   src/Controller/BlogController.php
+	modified:   templates/base.html.twig
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	templates/blog/create.html.twig
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   src/Controller/BlogController.php
+	modified:   templates/base.html.twig
+	new file:   templates/blog/create.html.twig
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part 2"
+[jls 7875692] Part 2
+ 3 files changed, 41 insertions(+), 3 deletions(-)
+ create mode 100644 templates/blog/create.html.twig
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 1.27 KiB | 1.27 MiB/s, done.
+Total 9 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/JLdevprog/Symf-Blog.git
+To https://github.com/JLdevprog/symf.git
+   6aa97db..7875692  jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git pull origin master
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+From https://github.com/JLdevprog/symf
+ * branch            master     -> FETCH_HEAD
+   ddfcefc..4730498  master     -> origin/master
+Updating 7875692..4730498
+Fast-forward
+ README.md | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls 
