@@ -38,7 +38,13 @@
 		{{ form_row(formArticle.content, {'attr': {'placeholder':"Article Content"}}) }}
 		{{ form_row(formArticle.image, {'attr': {'placeholder':"Article URL Image"}}) }}
 
-		<button type="submit" class="btn btn-success">Register</button>
+		<button type="submit" class="btn btn-success">
+			{% if editMode %}
+				Modify
+			{% else %}
+				Register
+			{% endif %}
+		</button>
 
 	{{ form_end(formArticle) }}
 
