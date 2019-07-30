@@ -821,3 +821,847 @@ remote:   https://github.com/JLdevprog/Symf-Blog.git
 To https://github.com/JLdevprog/symf.git
    4537010..edbd8cd  jls -> jls
  Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls 
+  TODO/
+  ToDoListS/
+  Unity-2D_Platform/
+  automate-test/
+  composer.phar
+  mooc-symfony4/
+  symf/
+  test.html
+  wordpress/
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps   jls ●  ls -l
+total 3752
+drwxr-xr-x  10 Shugox  staff      320 Apr  4 10:48 BattleShip
+drwxr-xr-x   7 Shugox  staff      224 Feb 28 11:52 CustomFont
+drwxr-xr-x  10 Shugox  staff      320 Apr  8 16:19 Design
+drwxr-xr-x   8 Shugox  staff      256 Apr 11 09:29 Eshop
+drwxr-xr-x   7 Shugox  staff      224 Mar 11 14:39 Game_UnityGeoMap
+drwxr-xr-x  16 Shugox  staff      512 Jul 26 07:40 IFAMAKER
+drwxr-xr-x   8 Shugox  staff      256 Jan 28  2019 JLDP
+drwxr-xr-x  13 Shugox  staff      416 Apr 21 20:41 JLdp-website
+drwxr-xr-x   9 Shugox  staff      288 Feb 12 15:38 JLwebsite
+drwxr-xr-x   6 Shugox  staff      192 Apr 12 08:49 Java
+drwxr-xr-x   6 Shugox  staff      192 Apr  4 09:37 Json
+drwxr-xr-x   6 Shugox  staff      192 Mar  8 10:47 OOP-sample
+drwxr-xr-x   7 Shugox  staff      224 Feb 18 16:43 PixelArt-Body-S-16bit
+drwxr-xr-x  19 Shugox  staff      608 Jul 20 09:05 RedSpher-Interface
+drwxr-xr-x   9 Shugox  staff      288 Jan 28  2019 Rescipte
+drwxr-xr-x  12 Shugox  staff      384 Mar 19 15:41 SpotIFA
+drwxr-xr-x  13 Shugox  staff      416 Apr 24 14:49 TODO
+drwxr-xr-x  10 Shugox  staff      320 Mar 21 16:44 ToDoListS
+drwxr-xr-x   5 Shugox  staff      160 Jun  4 10:01 Unity-2D_Platform
+drwxr-xr-x  19 Shugox  staff      608 Jul 20 09:15 automate-test
+-rwxr-xr-x   1 Shugox  staff  1915161 Jul 23 18:59 composer.phar
+drwxr-xr-x  19 Shugox  staff      608 Jul 25 16:41 mooc-symfony4
+drwxr-xr-x  23 Shugox  staff      736 Jul 29 11:13 symf
+-rw-r--r--@  1 Shugox  staff     3555 Mar 11 12:01 test.html
+drwxr-xr-x@ 25 Shugox  staff      800 Jul 29 15:51 wordpress
+ Shugox@Johanns-MacBook-Pro  ~/jldps   jls ●  cd wordpress
+ Shugox@Johanns-MacBook-Pro  ~/jldps/wordpress   jls ●  git status
+On branch jls
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+  modified:   wp-content/uploads/elementor/css/post-68.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+  wp-content/uploads/elementor/css/post-101.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/wordpress   jls ●  git add .
+ Shugox@Johanns-MacBook-Pro  ~/jldps/wordpress   jls ✚  git status
+On branch jls
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+  new file:   wp-content/uploads/elementor/css/post-101.css
+  modified:   wp-content/uploads/elementor/css/post-68.css
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/wordpress   jls ✚  git commit -m "Updt"
+[jls 665b1a3] Updt
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 wp-content/uploads/elementor/css/post-101.css
+ Shugox@Johanns-MacBook-Pro  ~/jldps/wordpress   jls  git status
+On branch jls
+nothing to commit, working tree clean
+ Shugox@Johanns-MacBook-Pro  ~/jldps/wordpress   jls  git push origin jls
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 1.13 KiB | 1.13 MiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+To https://github.com/JLdevprog/JLdp-wp.git
+   28b460c..665b1a3  jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/wordpress   jls  cd ..
+ Shugox@Johanns-MacBook-Pro  ~/jldps   jls ●  cd symf
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  symfony server:start
+
+Version 4.6.2 is available. Do you want to update now (execution will continue after whatever you decide) ? [Y/n]: y
+
+Update notes:
+  v4.6.2:
+  - Fix PHP discovery for homebrew (when the binary contains a `_` under the `php/` subdirectory)
+  - Add `billing:update:card` command to allow one to update projects's billing card from CLI
+  - Change default PHP version selection to prefer non-symlinked versions
+  - Fix infinite loop when credit card is invalid
+  - Add a command to refresh PHP versions (`local:php:refresh`)
+  - Fix a panic when adding something between `symfony` and `composer`/`php`/`console`
+  - Fix PHP version used for `symfony composer`
+  - Add support for phpenv dev versions
+  - Add information about why a PHP version is chosen for the current directory in `local:php:list`
+  - Allow to `project:scale` directly to a specific plan
+  - Fix looking for all PHP versions in PATH on Linux
+
+Upgrading to 4.6.2
+ 7.66 MiB / 7.66 MiB [====================] 100.00% 6.00 MiB/s 1s
+2019/07/30 09:18:12 Integrity check in 2334 from 2313.
+Backup failed, rename /usr/local/bin/symfony /Users/Shugox/.symfony/autoupdate/2019-07-30_09-18-12-2950436-old: permission denied. Canceling upgrade.
+
+ [WARNING] run "symfony server:ca:install" first if you want
+ to run the web server with TLS support, or use
+ "--no-tls" to avoid this warning
+
+
+Jul 30 09:18:12 |INFO | PHP    listening path="/Applications/MAMP/bin/php/php7.3.1/bin/php-cgi" php="7.3.1" port=49724
+Jul 30 09:18:12 |DEBUG| PHP    started
+
+ [OK] Web server listening on http://127.0.0.1:8001 (PHP CGI
+ 7.3.1)
+
+
+Jul 30 07:18:41 |INFO | REQUES Matched route "blog". method="GET" request_uri="http://127.0.0.1:8001/blog" route="blog" route_parameters={"_controller":"App\\Controller\\BlogController::index","_route":"blog"}
+Jul 30 07:18:41 |INFO | SECURI Populated the TokenStorage with an anonymous Token.
+Jul 30 07:18:41 |DEBUG| DOCTRI SELECT t0.id AS id_1, t0.title AS title_2, t0.content AS content_3, t0.image AS image_4, t0.create_at AS create_at_5 FROM article t0
+Jul 30 09:18:42 |INFO | SERVER GET  (200) /blog ip="127.0.0.1"
+Jul 30 07:18:42 |INFO | REQUES Matched route "_wdt". method="GET" request_uri="http://127.0.0.1:8001/_wdt/719e2f" route="_wdt" route_parameters={"_controller":"web_profiler.controller.profiler::toolbarAction","_route":"_wdt","token":"719e2f"}
+Jul 30 09:18:42 |INFO | SERVER GET  (200) /_wdt/719e2f
+Jul 30 07:18:42 |ERROR| REQUES Uncaught PHP Exception Symfony\Component\HttpKernel\Exception\NotFoundHttpException: "No route found for "GET /favicon.ico" (from "http://127.0.0.1:8001/blog")" at /Users/Shugox/jldps/symf/vendor/symfony/http-kernel/EventListener/RouterListener.php line 141 exception="[object] (Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException(code: 0): No route found for \"GET /favicon.ico\" (from \"http://127.0.0.1:8001/blog\") at /Users/Shugox/jldps/symf/vendor/symfony/http-kernel/EventListener/RouterListener.php:141, Symfony\\Component\\Routing\\Exception\\ResourceNotFoundException(code: 0): No routes found for \"/favicon.ico/\". at /Users/Shugox/jldps/symf/vendor/symfony/routing/Matcher/Dumper/CompiledUrlMatcherTrait.php:70)"
+Jul 30 09:18:43 |WARN | SERVER GET  (404) /favicon.ico
+^CJul 30 09:19:13 |INFO | SERVER shutting down
+Jul 30 09:19:13 |DEBUG| PHP    stopped path="/Applications/MAMP/bin/php/php7.3.1/bin/php-cgi" php="7.3.1"
+Jul 30 09:19:13 |INFO | SERVER shut down, bye!
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  php bin/consoel about
+Could not open input file: bin/consoel
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  php bin/console about
+ -------------------- ---------------------------------
+  Symfony
+ -------------------- ---------------------------------
+  Version              4.3.2
+  End of maintenance   01/2020
+  End of life          07/2020
+ -------------------- ---------------------------------
+  Kernel
+ -------------------- ---------------------------------
+  Type                 App\Kernel
+  Environment          dev
+  Debug                true
+  Charset              UTF-8
+  Cache directory      ./var/cache/dev (87.0 MiB)
+  Log directory        ./var/log (273 KiB)
+ -------------------- ---------------------------------
+  PHP
+ -------------------- ---------------------------------
+  Version              7.3.1
+  Architecture         64 bits
+  Intl locale          en_US
+  Timezone             UTC (2019-07-30T07:23:47+00:00)
+  OPcache              false
+  APCu                 false
+  Xdebug               false
+ -------------------- ---------------------------------
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+  modified:   src/Controller/BlogController.php
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+
+On branch jls
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+  modified:   src/Controller/BlogController.php
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part3"
+[jls 6ceb6ba] Part3
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 460 bytes | 460.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/JLdevprog/Symf-Blog.git
+To https://github.com/JLdevprog/symf.git
+   43d94f3..6ceb6ba  jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  php bin/console make:entity
+
+ Class name of the entity to create or update (e.g. OrangePizza):
+ > Category
+
+ created: src/Entity/Category.php
+ created: src/Repository/CategoryRepository.php
+
+ Entity generated! Now let's add some fields!
+ You can always add more fields later manually or by re-running this command.
+
+ New property name (press <return> to stop adding fields):
+ > title
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ >
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Category.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > description
+
+ Field type (enter ? to see all types) [string]:
+ > text
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ > yes
+
+ updated: src/Entity/Category.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > articles
+
+ Field type (enter ? to see all types) [string]:
+ > ?
+
+Main types
+  * string
+  * text
+  * boolean
+  * integer (or smallint, bigint)
+  * float
+
+Relationships / Associations
+  * relation (a wizard 🧙 will help you build the relation)
+  * ManyToOne
+  * OneToMany
+  * ManyToMany
+  * OneToOne
+
+Array/Object Types
+  * array (or simple_array)
+  * json
+  * object
+  * binary
+  * blob
+
+Date/Time Types
+  * datetime (or datetime_immutable)
+  * datetimetz (or datetimetz_immutable)
+  * date (or date_immutable)
+  * time (or time_immutable)
+  * dateinterval
+
+Other Types
+  * json_array
+  * decimal
+  * guid
+
+
+ Field type (enter ? to see all types) [string]:
+ > relation
+
+ What class should this entity be related to?:
+ > Article
+
+What type of relationship is this?
+ ------------ -----------------------------------------------------------------------
+  Type         Description
+ ------------ -----------------------------------------------------------------------
+  ManyToOne    Each Category relates to (has) one Article.
+               Each Article can relate to (can have) many Category objects
+
+  OneToMany    Each Category can relate to (can have) many Article objects.
+               Each Article relates to (has) one Category
+
+  ManyToMany   Each Category can relate to (can have) many Article objects.
+               Each Article can also relate to (can also have) many Category objects
+
+  OneToOne     Each Category relates to (has) exactly one Article.
+               Each Article also relates to (has) exactly one Category.
+ ------------ -----------------------------------------------------------------------
+
+ Relation type? [ManyToOne, OneToMany, ManyToMany, OneToOne]:
+ > OneToMany
+
+ A new property will also be added to the Article class so that you can access and set the related Category object from it.
+
+ New field name inside Article [category]:
+ >
+
+ Is the Article.category property allowed to be null (nullable)? (yes/no) [yes]:
+ > no
+
+ Do you want to activate orphanRemoval on your relationship?
+ A Article is "orphaned" when it is removed from its related Category.
+ e.g. $category->removeArticle($article)
+
+ NOTE: If a Article may *change* from one Category to another, answer "no".
+
+ Do you want to automatically delete orphaned App\Entity\Article objects (orphanRemoval)? (yes/no) [no]:
+ >
+
+ updated: src/Entity/Category.php
+ updated: src/Entity/Article.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ >
+
+
+
+  Success!
+
+
+ Next: When you're ready, create a migration with make:migration
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console make:migration
+
+
+  Success!
+
+
+ Next: Review the new migration "src/Migrations/Version20190730074108.php"
+ Then: Run the migration with php bin/console doctrine:migrations:migrate
+ See https://symfony.com/doc/current/bundles/DoctrineMigrationsBundle/index.html
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console doctrine:migration:migrate
+
+                    Application Migrations
+
+
+WARNING! You are about to execute a database migration that could result in schema changes and data loss. Are you sure you wish to continue? (y/n)y
+Migrating up to 20190730074108 from 20190726092712
+
+  ++ migrating 20190730074108
+
+     -> CREATE TABLE category (id INT AUTO_INCREMENT NOT NULL, title VARCHAR(255) NOT NULL, description LONGTEXT DEFAULT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ENGINE = InnoDB
+     -> ALTER TABLE article ADD category_id INT NOT NULL
+     -> ALTER TABLE article ADD CONSTRAINT FK_23A0E6612469DE2 FOREIGN KEY (category_id) REFERENCES category (id)
+     -> CREATE INDEX IDX_23A0E6612469DE2 ON article (category_id)
+
+  ++ migrated (took 321.1ms, used 16M memory)
+
+  ------------------------
+
+  ++ finished in 333.3ms
+  ++ used 16M memory
+  ++ 1 migrations executed
+  ++ 4 sql queries
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console make:entity
+
+ Class name of the entity to create or update (e.g. OrangeKangaroo):
+ > Comment
+
+ created: src/Entity/Comment.php
+ created: src/Repository/CommentRepository.php
+
+ Entity generated! Now let's add some fields!
+ You can always add more fields later manually or by re-running this command.
+
+ New property name (press <return> to stop adding fields):
+ > author
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ >
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Comment.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > content
+
+ Field type (enter ? to see all types) [string]:
+ > text
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Comment.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > createdAt
+
+ Field type (enter ? to see all types) [datetime]:
+ >
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Comment.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > article
+
+ Field type (enter ? to see all types) [string]:
+ > relation
+
+ What class should this entity be related to?:
+ > Article
+
+What type of relationship is this?
+ ------------ ----------------------------------------------------------------------
+  Type         Description
+ ------------ ----------------------------------------------------------------------
+  ManyToOne    Each Comment relates to (has) one Article.
+               Each Article can relate to (can have) many Comment objects
+
+  OneToMany    Each Comment can relate to (can have) many Article objects.
+               Each Article relates to (has) one Comment
+
+  ManyToMany   Each Comment can relate to (can have) many Article objects.
+               Each Article can also relate to (can also have) many Comment objects
+
+  OneToOne     Each Comment relates to (has) exactly one Article.
+               Each Article also relates to (has) exactly one Comment.
+ ------------ ----------------------------------------------------------------------
+
+ Relation type? [ManyToOne, OneToMany, ManyToMany, OneToOne]:
+ > ManyToOne
+
+ Is the Comment.article property allowed to be null (nullable)? (yes/no) [yes]:
+ > no
+
+ Do you want to add a new property to Article so that you can access/update Comment objects from it - e.g. $article->getComments()? (yes/no) [yes]:
+ >
+
+ A new property will also be added to the Article class so that you can access the related Comment objects from it.
+
+ New field name inside Article [comments]:
+ >
+
+ Do you want to activate orphanRemoval on your relationship?
+ A Comment is "orphaned" when it is removed from its related Article.
+ e.g. $article->removeComment($comment)
+
+ NOTE: If a Comment may *change* from one Article to another, answer "no".
+
+ Do you want to automatically delete orphaned App\Entity\Comment objects (orphanRemoval)? (yes/no) [no]:
+ > yes
+
+ updated: src/Entity/Comment.php
+ updated: src/Entity/Article.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ >
+
+
+
+  Success!
+
+
+ Next: When you're ready, create a migration with make:migration
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console make:migration
+
+
+  Success!
+
+
+ Next: Review the new migration "src/Migrations/Version20190730075648.php"
+ Then: Run the migration with php bin/console doctrine:migrations:migrate
+ See https://symfony.com/doc/current/bundles/DoctrineMigrationsBundle/index.html
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console doctrine:migrations:migrate
+
+                    Application Migrations
+
+
+WARNING! You are about to execute a database migration that could result in schema changes and data loss. Are you sure you wish to continue? (y/n)y
+Migrating up to 20190730075648 from 20190730074108
+
+  ++ migrating 20190730075648
+
+     -> CREATE TABLE comment (id INT AUTO_INCREMENT NOT NULL, article_id INT NOT NULL, author VARCHAR(255) NOT NULL, content LONGTEXT NOT NULL, created_at DATETIME NOT NULL, INDEX IDX_9474526C7294869C (article_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ENGINE = InnoDB
+     -> ALTER TABLE comment ADD CONSTRAINT FK_9474526C7294869C FOREIGN KEY (article_id) REFERENCES article (id)
+
+  ++ migrated (took 126.3ms, used 16M memory)
+
+  ------------------------
+
+  ++ finished in 130.4ms
+  ++ used 16M memory
+  ++ 1 migrations executed
+  ++ 2 sql queries
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git status
+
+On branch jls
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+  modified:   src/Entity/Article.php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+  src/Entity/Category.php
+  src/Entity/Comment.php
+  src/Migrations/Version20190730074108.php
+  src/Migrations/Version20190730075648.php
+  src/Repository/CategoryRepository.php
+  src/Repository/CommentRepository.php
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+
+On branch jls
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+  modified:   src/Entity/Article.php
+  new file:   src/Entity/Category.php
+  new file:   src/Entity/Comment.php
+  new file:   src/Migrations/Version20190730074108.php
+  new file:   src/Migrations/Version20190730075648.php
+  new file:   src/Repository/CategoryRepository.php
+  new file:   src/Repository/CommentRepository.php
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part3 Updt"
+[jls 6bf4828] Part3 Updt
+ 7 files changed, 430 insertions(+)
+ create mode 100644 src/Entity/Category.php
+ create mode 100644 src/Entity/Comment.php
+ create mode 100644 src/Migrations/Version20190730074108.php
+ create mode 100644 src/Migrations/Version20190730075648.php
+ create mode 100644 src/Repository/CategoryRepository.php
+ create mode 100644 src/Repository/CommentRepository.php
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 3.81 KiB | 3.81 MiB/s, done.
+Total 13 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), completed with 3 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/JLdevprog/Symf-Blog.git
+To https://github.com/JLdevprog/symf.git
+   6ceb6ba..6bf4828  jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  composer require fzaninotto/faker --dev
+zsh: command not found: composer
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  php composer require fzaninotto/faker --dev
+Could not open input file: composer
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  php composer.phar require fzaninotto/faker --dev
+Using version ^1.8 for fzaninotto/faker
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.3.*"
+Package operations: 1 install, 0 updates, 0 removals
+  - Installing fzaninotto/faker (v1.8.0): Downloading (100%)     Writing lock file
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console doctrine:fixture:load
+
+ Careful, database "blog" will be purged. Do you want to continue? (yes/no) [no]:
+ > y
+
+   > purging database
+   > loading App\DataFixtures\AppFixtures
+   > loading App\DataFixtures\ArticleFixtures
+
+In ArticleFixtures.php line 18:
+
+  Attempted to load class "Factory" from namespace "App\DataFi
+  xtures\Faker".
+  Did you forget a "use" statement for e.g. "Faker\Factory" or
+   "Doctrine\Migrations\Version\Factory"?
+
+
+doctrine:fixtures:load [--append] [--group GROUP] [--em EM] [--shard SHARD] [--purge-with-truncate] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>
+
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console doctrine:fixture:load
+
+ Careful, database "blog" will be purged. Do you want to continue? (yes/no) [no]:
+ > y
+
+   > purging database
+   > loading App\DataFixtures\AppFixtures
+   > loading App\DataFixtures\ArticleFixtures
+
+In ArticleFixtures.php line 37:
+
+  Attempted to call an undefined method named "setCreatedAt" o
+  f class "App\Entity\Article".
+  Did you mean to call e.g. "getCreateAt" or "setCreateAt"?
+
+
+doctrine:fixtures:load [--append] [--group GROUP] [--em EM] [--shard SHARD] [--purge-with-truncate] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>
+
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console doctrine:fixture:load
+
+ Careful, database "blog" will be purged. Do you want to continue? (yes/no) [no]:
+ > y
+
+   > purging database
+   > loading App\DataFixtures\AppFixtures
+   > loading App\DataFixtures\ArticleFixtures
+
+In ArticleFixtures.php line 37:
+
+  Attempted to call an undefined method named "setCreatedAt" o
+  f class "App\Entity\Article".
+  Did you mean to call e.g. "getCreateAt" or "setCreateAt"?
+
+
+doctrine:fixtures:load [--append] [--group GROUP] [--em EM] [--shard SHARD] [--purge-with-truncate] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>
+
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console doctrine:fixture:load
+
+ Careful, database "blog" will be purged. Do you want to continue? (yes/no) [no]:
+ > y
+
+   > purging database
+   > loading App\DataFixtures\AppFixtures
+   > loading App\DataFixtures\ArticleFixtures
+
+In ArticleFixtures.php line 49:
+
+  Attempted to call an undefined method named "getCreatedAt" o
+  f class "App\Entity\Article".
+  Did you mean to call e.g. "getCreateAt" or "setCreateAt"?
+
+
+doctrine:fixtures:load [--append] [--group GROUP] [--em EM] [--shard SHARD] [--purge-with-truncate] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>
+
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console doctrine:fixture:load
+
+ Careful, database "blog" will be purged. Do you want to continue? (yes/no) [no]:
+ > y
+
+   > purging database
+   > loading App\DataFixtures\AppFixtures
+   > loading App\DataFixtures\ArticleFixtures
+
+In ArticleFixtures.php line 49:
+
+  Attempted to call an undefined method named "getCreatedAt" o
+  f class "App\Entity\Article".
+  Did you mean to call e.g. "getCreateAt" or "setCreateAt"?
+
+
+doctrine:fixtures:load [--append] [--group GROUP] [--em EM] [--shard SHARD] [--purge-with-truncate] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>
+
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console doctrine:fixture:load
+
+ Careful, database "blog" will be purged. Do you want to continue? (yes/no) [no]:
+ > y
+
+   > purging database
+   > loading App\DataFixtures\AppFixtures
+   > loading App\DataFixtures\ArticleFixtures
+
+In ArticleFixtures.php line 49:
+
+  Attempted to call an undefined method named "getCreatedAt" o
+  f class "App\Entity\Article".
+  Did you mean to call e.g. "getCreateAt" or "setCreateAt"?
+
+
+doctrine:fixtures:load [--append] [--group GROUP] [--em EM] [--shard SHARD] [--purge-with-truncate] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>
+
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console doctrine:fixture:load
+
+ Careful, database "blog" will be purged. Do you want to continue? (yes/no) [no]:
+ > y
+
+   > purging database
+   > loading App\DataFixtures\AppFixtures
+   > loading App\DataFixtures\ArticleFixtures
+
+In ArticleFixtures.php line 49:
+
+  Attempted to call an undefined method named "getCreatedAt" o
+  f class "App\Entity\Article".
+  Did you mean to call e.g. "getCreateAt" or "setCreateAt"?
+
+
+doctrine:fixtures:load [--append] [--group GROUP] [--em EM] [--shard SHARD] [--purge-with-truncate] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>
+
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  php bin/console doctrine:fixture:load
+
+ Careful, database "blog" will be purged. Do you want to continue? (yes/no) [no]:
+ > y
+
+   > purging database
+   > loading App\DataFixtures\AppFixtures
+   > loading App\DataFixtures\ArticleFixtures
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git status
+
+On branch jls
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+  modified:   composer.json
+  modified:   composer.lock
+  modified:   src/DataFixtures/ArticleFixtures.php
+  modified:   symfony.lock
+  modified:   templates/blog/show.html.twig
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+
+On branch jls
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+  modified:   composer.json
+  modified:   composer.lock
+  modified:   src/DataFixtures/ArticleFixtures.php
+  modified:   symfony.lock
+  modified:   templates/blog/show.html.twig
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m
+error: switch `m' requires a value
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part3 Updt"
+[jls 6894802] Part3 Updt
+ 5 files changed, 100 insertions(+), 9 deletions(-)
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 1.93 KiB | 282.00 KiB/s, done.
+Total 11 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas: 100% (8/8), completed with 8 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/JLdevprog/Symf-Blog.git
+To https://github.com/JLdevprog/symf.git
+   6bf4828..6894802  jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+  modified:   templates/blog/show.html.twig
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+
+On branch jls
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+  modified:   templates/blog/show.html.twig
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part3 Updt"
+[jls f74bdb6] Part3 Updt
+ 1 file changed, 19 insertions(+), 2 deletions(-)
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 736 bytes | 736.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/JLdevprog/Symf-Blog.git
+To https://github.com/JLdevprog/symf.git
+   6894802..f74bdb6  jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 6 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+  modified:   src/Form/ArticleType.php
+  modified:   templates/blog/create.html.twig
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+
+On branch jls
+Your branch is ahead of 'origin/master' by 6 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+  modified:   src/Form/ArticleType.php
+  modified:   templates/blog/create.html.twig
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part3 Updt"
+[jls ca9ad25] Part3 Updt
+ 2 files changed, 7 insertions(+)
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 759 bytes | 759.00 KiB/s, done.
+Total 8 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/JLdevprog/Symf-Blog.git
+To https://github.com/JLdevprog/symf.git
+   f74bdb6..ca9ad25  jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls 
