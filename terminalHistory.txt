@@ -1665,3 +1665,466 @@ remote:   https://github.com/JLdevprog/Symf-Blog.git
 To https://github.com/JLdevprog/symf.git
    f74bdb6..ca9ad25  jls -> jls
  Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls 
+ Last login: Tue Jul 30 13:18:38 on ttys000
+ Shugox@Johanns-MacBook-Pro  ~  cd jldps
+ Shugox@Johanns-MacBook-Pro  ~/jldps   jls ●  cd symf
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 7 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+  modified:   terminalHistory.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 7 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+  modified:   terminalHistory.txt
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part4"
+[jls 6d7fc3b] Part4
+ 1 file changed, 844 insertions(+)
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 10.94 KiB | 5.47 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/JLdevprog/Symf-Blog.git
+To https://github.com/JLdevprog/symf.git
+   ca9ad25..6d7fc3b  jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  php bin/console make:entity User
+
+ created: src/Entity/User.php
+ created: src/Repository/UserRepository.php
+
+ Entity generated! Now let's add some fields!
+ You can always add more fields later manually or by re-running this command.
+
+ New property name (press <return> to stop adding fields):
+ > email
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ >
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/User.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > username
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ >
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/User.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > password
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ >
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/User.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ >
+
+
+
+  Success!
+
+
+ Next: When you're ready, create a migration with make:migration
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  php bin/console make:migration
+
+
+  Success!
+
+
+ Next: Review the new migration "src/Migrations/Version20190730114111.php"
+ Then: Run the migration with php bin/console doctrine:migrations:migrate
+ See https://symfony.com/doc/current/bundles/DoctrineMigrationsBundle/index.html
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  php bin/console doctrine:migrations:migrate
+
+                    Application Migrations
+
+
+WARNING! You are about to execute a database migration that could result in schema changes and data loss. Are you sure you wish to continue? (y/n)y
+Migrating up to 20190730114111 from 20190730075648
+
+  ++ migrating 20190730114111
+
+     -> CREATE TABLE user (id INT AUTO_INCREMENT NOT NULL, email VARCHAR(255) NOT NULL, username VARCHAR(255) NOT NULL, password VARCHAR(255) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ENGINE = InnoDB
+
+  ++ migrated (took 152.5ms, used 14M memory)
+
+  ------------------------
+
+  ++ finished in 167.3ms
+  ++ used 14M memory
+  ++ 1 migrations executed
+  ++ 1 sql queries
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  php bin/console make:form RegistrationType
+
+ The name of Entity or fully qualified model class name that the new form will be bound to (empty for none):
+ > User
+
+ created: src/Form/RegistrationType.php
+
+
+  Success!
+
+
+ Next: Add fields to your form and start using it.
+ Find the documentation at https://symfony.com/doc/current/forms.html
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  php bin/console make:controller
+
+ Choose a name for your controller class (e.g. BravePuppyController):
+ > SecurityController
+
+ created: src/Controller/SecurityController.php
+ created: templates/security/index.html.twig
+
+
+  Success!
+
+
+ Next: Open your new controller class and add some pages!
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 8 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+  modified:   templates/base.html.twig
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+  src/Controller/SecurityController.php
+  src/Entity/User.php
+  src/Form/RegistrationType.php
+  src/Migrations/Version20190730114111.php
+  src/Repository/UserRepository.php
+  templates/security/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 8 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+  new file:   src/Controller/SecurityController.php
+  new file:   src/Entity/User.php
+  new file:   src/Form/RegistrationType.php
+  new file:   src/Migrations/Version20190730114111.php
+  new file:   src/Repository/UserRepository.php
+  modified:   templates/base.html.twig
+  new file:   templates/security/index.html.twig
+  new file:   templates/security/registration.html.twig
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part4 Updt"
+[jls ad5a5d5] Part4 Updt
+ 8 files changed, 277 insertions(+), 1 deletion(-)
+ create mode 100644 src/Controller/SecurityController.php
+ create mode 100644 src/Entity/User.php
+ create mode 100644 src/Form/RegistrationType.php
+ create mode 100644 src/Migrations/Version20190730114111.php
+ create mode 100644 src/Repository/UserRepository.php
+ create mode 100644 templates/security/index.html.twig
+ create mode 100644 templates/security/registration.html.twig
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 27, done.
+Counting objects: 100% (27/27), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (18/18), 4.29 KiB | 2.15 MiB/s, done.
+Total 18 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/JLdevprog/Symf-Blog.git
+To https://github.com/JLdevprog/symf.git
+   6d7fc3b..ad5a5d5  jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 9 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+  modified:   config/packages/security.yaml
+  modified:   src/Controller/SecurityController.php
+  modified:   src/Entity/User.php
+  modified:   templates/security/registration.html.twig
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 9 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+  modified:   config/packages/security.yaml
+  modified:   src/Controller/SecurityController.php
+  modified:   src/Entity/User.php
+  modified:   templates/security/registration.html.twig
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part4 Updt"
+[jls 4525303] Part4 Updt
+ 4 files changed, 24 insertions(+), 2 deletions(-)
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 25, done.
+Counting objects: 100% (25/25), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 1.25 KiB | 1.25 MiB/s, done.
+Total 13 (delta 12), reused 0 (delta 0)
+remote: Resolving deltas: 100% (12/12), completed with 12 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/JLdevprog/Symf-Blog.git
+To https://github.com/JLdevprog/symf.git
+   ad5a5d5..4525303  jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 10 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+  modified:   config/packages/security.yaml
+  modified:   src/Controller/SecurityController.php
+  modified:   src/Entity/User.php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+  templates/security/login.html.twig
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 10 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+  modified:   config/packages/security.yaml
+  modified:   src/Controller/SecurityController.php
+  modified:   src/Entity/User.php
+  new file:   templates/security/login.html.twig
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part4 Updt"
+[jls e66ed16] Part4 Updt
+ 4 files changed, 42 insertions(+), 1 deletion(-)
+ create mode 100644 templates/security/login.html.twig
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 24, done.
+Counting objects: 100% (24/24), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 1.60 KiB | 1.60 MiB/s, done.
+Total 13 (delta 10), reused 0 (delta 0)
+remote: Resolving deltas: 100% (10/10), completed with 10 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/JLdevprog/Symf-Blog.git
+To https://github.com/JLdevprog/symf.git
+   4525303..e66ed16  jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 11 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+  modified:   config/packages/security.yaml
+  modified:   src/Controller/SecurityController.php
+  modified:   templates/base.html.twig
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 11 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+  modified:   config/packages/security.yaml
+  modified:   src/Controller/SecurityController.php
+  modified:   templates/base.html.twig
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part4 Updt"
+[jls f866064] Part4 Updt
+ 3 files changed, 21 insertions(+)
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 1014 bytes | 1014.00 KiB/s, done.
+Total 10 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas: 100% (8/8), completed with 8 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/JLdevprog/Symf-Blog.git
+To https://github.com/JLdevprog/symf.git
+   e66ed16..f866064  jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  php bin:console make:form
+Could not open input file: bin:console
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  php bin/console make:form
+
+ The name of the form class (e.g. AgreeableChefType):
+ > CommentType
+
+ The name of Entity or fully qualified model class name that the new form will be bound to (empty for none):
+ >
+
+ created: src/Form/CommentType.php
+
+
+  Success!
+
+
+ Next: Add fields to your form and start using it.
+ Find the documentation at https://symfony.com/doc/current/forms.html
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  php bin/console make:form
+
+ The name of the form class (e.g. BravePizzaType):
+ > CommentType
+
+ The name of Entity or fully qualified model class name that the new form will be bound to (empty for none):
+ > Comment
+
+
+
+ [ERROR] The file "src/Form/CommentType.php" can't be generated
+         because it already exists.
+
+
+ ✘ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  php bin/console make:form
+
+ The name of the form class (e.g. TinyGnomeType):
+ > CommentType
+
+ The name of Entity or fully qualified model class name that the new form will be bound to (empty for none):
+ > Comment
+
+ created: src/Form/CommentType.php
+
+
+  Success!
+
+
+ Next: Add fields to your form and start using it.
+ Find the documentation at https://symfony.com/doc/current/forms.html
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 12 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+  modified:   config/packages/security.yaml
+  modified:   src/Controller/BlogController.php
+  modified:   templates/blog/show.html.twig
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+  src/Form/CommentType.php
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ●  git add .
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 12 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+  modified:   config/packages/security.yaml
+  modified:   src/Controller/BlogController.php
+  new file:   src/Form/CommentType.php
+  modified:   templates/blog/show.html.twig
+
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls ✚  git commit -m "Part4 Updt"
+[jls 47524e0] Part4 Updt
+ 4 files changed, 63 insertions(+), 4 deletions(-)
+ create mode 100644 src/Form/CommentType.php
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git push origin jls
+Enumerating objects: 24, done.
+Counting objects: 100% (24/24), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 1.81 KiB | 1.81 MiB/s, done.
+Total 13 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas: 100% (8/8), completed with 8 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/JLdevprog/Symf-Blog.git
+To https://github.com/JLdevprog/symf.git
+   f866064..47524e0  jls -> jls
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls  git status
+On branch jls
+Your branch is ahead of 'origin/master' by 13 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+ Shugox@Johanns-MacBook-Pro  ~/jldps/symf   jls 
