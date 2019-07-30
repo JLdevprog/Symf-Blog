@@ -6,11 +6,28 @@
 		<div class="metadata">
 			Write on 
 			{{ article.createAt | date('d/m/Y') }} at {{ article.createAt | date('H:i') }} 
-			Category Tuto
+			Category {{ article.category.title }}
 		</div>
 		<div class="content">
-			<img src="{{ article.image }}" alt="{{ article.title }}">
+			<img src="{{ article.image }}" alt="">
 			<p>{{ article.content | raw }}</p>
 		</div>
 	</article>
+
+	<section id="commentaires">
+		{% for comment in article.comments %}
+			<div class="comment">
+				<div class="row">
+					<div class="col-3">
+						{{ comment.author }}
+						(<small>{{ comment.createdAt | date('d/m/Y at H:i') }}</small>)
+					</div>
+					<div class="col">
+						{{ comment.content | raw }}
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</section>
+
 {% endblock body %}
